@@ -1,320 +1,376 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
     <!-- Google font setup -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/e04f9dbb8e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e04f9dbb8e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
     </script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Main Content -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
-
-        <!-- Header Section -->
-        <header class="lg:flex pt-10 mb-20">
-            <!-- Text Content -->
-            <div>
-                <h1 class="text-5xl md:text-7xl">It's good tea <br> time at The <br> Tea House</h1>
-                <br>
-                <p class="text-gray-500 w-3/4">Tea and Botanical solution supplier Give Optimum Satisfaction To Your
-                    Taste Buds.</p>
-                <br>
-                <button
-                    class="bg-gradient-to-r from-orange-500 to-red-600 px-5 py-3 rounded-lg text-white font-bold">Explore
-                    More
-                    <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
+      <!-- Header Section -->
+      <header class="lg:flex pt-10 mb-20">
+        <!-- Text Content -->
+        <div>
+          <h1 class="text-5xl md:text-7xl">
+            It's good tea <br />
+            time at The <br />
+            Tea House
+          </h1>
+          <br />
+          <p class="text-gray-500 w-3/4">
+            Tea and Botanical solution supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <br />
+          <button
+            class="bg-gradient-to-r from-orange-500 to-red-600 px-5 py-3 rounded-lg text-white font-bold"
+          >
+            Explore More
+            <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
+          </button>
+        </div>
+        <!-- Image Content -->
+        <div class="relative">
+          <!-- Image -->
+          <div>
+            <img class="w-full" src="images/banner.png" alt="" />
+          </div>
+          <!-- Card -->
+          <div
+            class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-20 md:top-80 md:left-32 lg:left-28"
+          >
+            <!-- icons -->
+            <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
+            <!-- Text -->
+            <div class="ml-2">
+              <h2 class="lg:text-2xl font-bold">5.00</h2>
+              <p class="text-gray-500">Trust Pilot Ratings</p>
             </div>
-            <!-- Image Content -->
-            <div class="relative">
-                <!-- Image -->
-                <div>
-                    <img class="w-full" src="images/banner.png" alt="">
-                </div>
-                <!-- Card -->
-                <div
-                    class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-20 md:top-80 md:left-32 lg:left-28">
-                    <!-- icons -->
-                    <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
-                    <!-- Text -->
-                    <div class="ml-2">
-                        <h2 class="lg:text-2xl font-bold">5.00</h2>
-                        <p class="text-gray-500">Trust Pilot Ratings</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Featured products section -->
+      <section class="py-8 lg:py-24">
+        <!-- Title -->
+        <div class="text-center mb-8">
+          <h1 class="text-3xl md:text-4xl font-bold mb-5">
+            Our Featured Products
+          </h1>
+          <p class="text-gray-600 mx-auto max-w-2xl">
+            Explore our signature tea selections, expertly brewed with
+            high-quality tea leaves and thoughtfully crafted for a refined,
+            refreshing experience.
+          </p>
+        </div>
+
+        <!-- Grid Cards -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center"
+        >
+          <!-- Product Card-1 -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-1.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Milk Tea</h2>
+              <p class="text-gray-600">
+                A smooth and creamy blend that delivers a rich, well-balanced
+                flavor with every sip.
+              </p>
             </div>
-        </header>
-
-        <!-- Featured products section -->
-        <section class="py-8 lg:py-24">
-            <!-- Title -->
-            <div class="text-center mb-8">
-                <h1 class="text-3xl md:text-4xl font-bold mb-5">Our Featured Products</h1>
-                <p class="text-gray-600 mx-auto max-w-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-                    id
-                    doloremque
-                    non accusamus provident
-                    autem, mollitia
-                    tenetur ad repudiandae!</p>
+          </div>
+          <!-- Product Card-2 -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-2.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Black Tea</h2>
+              <p class="text-gray-600 text-wrap">
+                Deep, aromatic, and full-bodied. Brewed fresh to highlight its
+                natural strength.
+              </p>
             </div>
-
-            <!-- Grid Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-                <!-- Product Card-1 -->
-                <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
-                    <img class="mx-auto pt-4" src="images/tea-1.png" alt="">
-                    <div class="p-4">
-                        <h2 class="font-bold text-xl">Milk Tea</h2>
-                        <p class="text-gray-600">Creamer could be replaced by Fresh milk</p>
-                    </div>
-                </div>
-                <!-- Product Card-2 -->
-                <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
-                    <img class="mx-auto pt-4" src="images/tea-2.png" alt="">
-                    <div class="p-4">
-                        <h2 class="font-bold text-xl">Black Tea</h2>
-                        <p class="text-gray-600">Creamer could be replaced by Fresh milk</p>
-                    </div>
-                </div>
-                <!-- Product Card-3 -->
-                <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
-                    <img class="mx-auto pt-4" src="images/tea-3.png" alt="">
-                    <div class="p-4">
-                        <h2 class="font-bold text-xl">Lemon Tea</h2>
-                        <p class="text-gray-600">Creamer could be replaced by Fresh milk</p>
-                    </div>
-                </div>
-                <!-- Product Card-4 -->
-                <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
-                    <img class="mx-auto pt-4" src="images/tea-4.png" alt="">
-                    <div class="p-4">
-                        <h2 class="font-bold text-xl">Green Tea</h2>
-                        <p class="text-gray-600">Creamer could be replaced by Fresh milk</p>
-                    </div>
-                </div>
+          </div>
+          <!-- Product Card-3 -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-3.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Lemon Tea</h2>
+              <p class="text-gray-600 text-wrap">
+                A refreshing infusion of tea and citrus, offering a crisp and
+                vibrant taste.
+              </p>
             </div>
-
-        </section>
-
-        <!-- Great Tea Section -->
-        <section class="mb-24">
-            <div class="grid grid-cols-1 lg:grid-cols-2 ">
-                <!-- Image Section -->
-                <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6">
-                    <!-- 1 no -->
-                    <div class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-xl"></div>
-                    <!-- 2 no -->
-                    <div class="bg-orange-50 rounded-xl row-span-2">
-                        <img class="mx-auto my-5" src="images/fresh-1.png" alt="">
-                    </div>
-                    <!-- 3 no -->
-                    <div class="bg-stone-100 rounded-xl row-span-2">
-                        <img class="mx-auto my-5" src="images/fresh-2.png" alt="">
-                    </div>
-                    <!-- 4 no -->
-                    <div class="h-38 bg-gradient-to-r from-stone-200 to-stone-100 rounded-xl"></div>
-                </div>
-
-                <!-- Text Section -->
-                <div>
-                    <h1 class="text-5xl font-bold mb-5">Great Tea, Freshly Presented</h1>
-                    <p class="text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem molestias,
-                        animi facilis, ullam
-                        nulla, autem quaerat quis libero maxime iusto illo expedita unde consequatur provident.
-                        Voluptatem reiciendis quae culpa quasi.</p>
-                    <br>
-                    <h1 class="text-2xl font-bold mb-5">Unique Taste</h1>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quos.</p>
-                    <br>
-                    <h1 class="text-2xl font-bold mb-5">Premium Quality</h1>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, hic!</p>
-                </div>
+          </div>
+          <!-- Product Card-4 -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-4.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Green Tea</h2>
+              <p class="text-gray-600 text-wrap">
+                Delicately brewed for a clean, smooth finish. Light, refreshing,
+                and soothing.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Meet Section -->
-        <section class="mb-24 ">
+      <!-- Great Tea Section -->
+      <section class="mb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <!-- Image Section -->
+          <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6">
+            <!-- 1 no -->
             <div
-                class=" bg-gradient-to-r from-orange-500 to-red-500 rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white px-7 md:px-16">
-
-                <!-- Text Section -->
-                <div class="flex justify-center items-center overflow-hidden">
-                    <div class="w-5/6">
-                        <h1 class="text-5xl font-bold mb-5 mt-10">Meet Our Super Clients</h1>
-                        <p class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos odit
-                            sint
-                            quaerat nulla
-                            blanditiis atque quidem possimus saepe quam.</p>
-                        <button class="bg-white text-orange-700 px-3 py-2 rounded-lg">Show All</button>
-                    </div>
-                </div>
-
-                <!-- Meet card section -->
-                <div class="relative py-24 ">
-                    <!-- Middle card -->
-                    <div class="absolute z-10 top-44 md:top-52">
-                        <div class=" h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5">
-                            <div class="absolute -top-5 -left-5 bg-white rounded-full"><img class="p-1"
-                                    src="images/client.png" alt="">
-                            </div>
-                            <div>
-                                <p class="text-gray-500 mb-5">Lorem ipsum dolor, sit amet consectetur elit.Alias
-                                    deserunt culpa nulla, commodi praesentium.</p>
-                                <h1 class="font-bold">IIham Yuda</h1>
-                                <small class="font-bold text-gray-500">Businessman</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Top Card -->
-                    <div
-                        class="relative left-8 md:left-32 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40">
-                        <div class="absolute -top-5 -left-5 bg-white rounded-full"><img class="p-1"
-                                src="images/client.png" alt="">
-                        </div>
-                        <div>
-                            <p class="text-gray-500 mb-5">Lorem ipsum dolor, sit amet consectetur elit.
-                                Omnis dolore alias deserunt culpa nulla, commodi praesentium.</p>
-                            <h1 class="font-bold">IIham Yuda</h1>
-                            <small class="font-bold text-gray-500">Businessman</small>
-                        </div>
-                    </div>
-
-                    <!-- Bottom card -->
-                    <div
-                        class="relative left-8 md:left-32 top-10 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40">
-                        <div class="absolute -top-5 -left-5 bg-white rounded-full"><img class="p-1"
-                                src="images/client.png" alt="">
-                        </div>
-                        <div>
-                            <p class="text-gray-500 mb-5">Lorem ipsum dolor, sit amet consectetur elit.
-                                Omnis dolore alias deserunt culpa nulla, commodi praesentium.</p>
-                            <h1 class="font-bold">IIham Yuda</h1>
-                            <small class="font-bold text-gray-500">Businessman</small>
-                        </div>
-                    </div>
-                </div>
+              class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-xl"
+            ></div>
+            <!-- 2 no -->
+            <div class="bg-orange-50 rounded-xl row-span-2">
+              <img class="mx-auto my-5" src="images/fresh-1.png" alt="" />
             </div>
-        </section>
-        <!-- News Section -->
+            <!-- 3 no -->
+            <div class="bg-stone-100 rounded-xl row-span-2">
+              <img class="mx-auto my-5" src="images/fresh-2.png" alt="" />
+            </div>
+            <!-- 4 no -->
+            <div
+              class="h-38 bg-gradient-to-r from-stone-200 to-stone-100 rounded-xl"
+            ></div>
+          </div>
 
+          <!-- Text Section -->
+          <div>
+            <h1 class="text-5xl font-bold mb-5">
+              Great Tea, Freshly Presented
+            </h1>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+              molestias, animi facilis, ullam nulla, autem quaerat quis libero
+              maxime iusto illo expedita unde consequatur provident. Voluptatem
+              reiciendis quae culpa quasi.
+            </p>
+            <br />
+            <h1 class="text-2xl font-bold mb-5">Unique Taste</h1>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quos.
+            </p>
+            <br />
+            <h1 class="text-2xl font-bold mb-5">Premium Quality</h1>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+              hic!
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <!-- Meet Section -->
+      <section class="mb-24">
+        <div
+          class="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white px-7 md:px-16"
+        >
+          <!-- Text Section -->
+          <div class="flex justify-center items-center overflow-hidden">
+            <div class="w-5/6">
+              <h1 class="text-5xl font-bold mb-5 mt-10">
+                Meet Our Super Clients
+              </h1>
+              <p class="mb-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium eos odit sint quaerat nulla blanditiis atque quidem
+                possimus saepe quam.
+              </p>
+              <button class="bg-white text-orange-700 px-3 py-2 rounded-lg">
+                Show All
+              </button>
+            </div>
+          </div>
 
+          <!-- Meet card section -->
+          <div class="relative py-24">
+            <!-- Middle card -->
+            <div class="absolute z-10 top-44 md:top-52">
+              <div
+                class="h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5"
+              >
+                <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                  <img class="p-1" src="images/client.png" alt="" />
+                </div>
+                <div>
+                  <p class="text-gray-500 mb-5">
+                    Lorem ipsum dolor, sit amet consectetur elit.Alias deserunt
+                    culpa nulla, commodi praesentium.
+                  </p>
+                  <h1 class="font-bold">IIham Yuda</h1>
+                  <small class="font-bold text-gray-500">Businessman</small>
+                </div>
+              </div>
+            </div>
+            <!-- Top Card -->
+            <div
+              class="relative left-8 md:left-32 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40"
+            >
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img class="p-1" src="images/client.png" alt="" />
+              </div>
+              <div>
+                <p class="text-gray-500 mb-5">
+                  Lorem ipsum dolor, sit amet consectetur elit. Omnis dolore
+                  alias deserunt culpa nulla, commodi praesentium.
+                </p>
+                <h1 class="font-bold">IIham Yuda</h1>
+                <small class="font-bold text-gray-500">Businessman</small>
+              </div>
+            </div>
+
+            <!-- Bottom card -->
+            <div
+              class="relative left-8 md:left-32 top-10 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40"
+            >
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img class="p-1" src="images/client.png" alt="" />
+              </div>
+              <div>
+                <p class="text-gray-500 mb-5">
+                  Lorem ipsum dolor, sit amet consectetur elit. Omnis dolore
+                  alias deserunt culpa nulla, commodi praesentium.
+                </p>
+                <h1 class="font-bold">IIham Yuda</h1>
+                <small class="font-bold text-gray-500">Businessman</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- News Section -->
     </main>
     <!-- Footer Section -->
     <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
-        <div class="w-9/12 mx-auto">
-            <div class="mb-8 flex justify-between">
-                <img class="mb-8" src="images/cup.png" alt="">
-                <div class="flex items-center gap-2">
-                    <h4>Ready to get started </h4>
-                    <button
-                        class="bg-gradient-to-r from-orange-500 to-red-600 px-3 py-2 rounded-lg text-white font-bold">Get
-                        Started</button>
-                </div>
-            </div>
-            <!-- Links -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <!-- first column -->
-                <div>
-                    <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li>
-                            <a class="hover:text-orange-600" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-orange-600" href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-orange-600" href="#">Insurance</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-orange-600" href="#">Privacy Policy</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <!-- Second column -->
-                <div>
-                    <h3 class="font-semibold text-lg mb-3">Our Services</h3>
-                    <ul class="space-y-2">
-                        <li>
-                            <a class="hover:text-orange-600" href="#">Life Insurance</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-orange-600" href="#">Car Insurance</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-orange-600" href="#">Health Insurance</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-orange-600" href="#">House Insurance</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <!-- Third column -->
-                <div>
-                    <h3 class="font-semibold text-lg mb-3">Help</h3>
-                    <ul class="space-y-2">
-                        <li>
-                            <a class="hover:text-orange-600" href="#">FAQs</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-orange-600" href="#">Contact Us</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <!-- Fourth column -->
-                <div>
-                    <h3 class="font-semibold text-lg mb-3">Subscribe to our newsletter</h3>
-                    <div class="flex flex-col space-y-2">
-                        <div>
-                            <input placeholder="Email Address" type="text"
-                                class="bg-transparent border-b-2 border-black w-4/6 ">
-                            <i
-                                class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"></i>
-                            <div class="flex justify-between w-2/5 mb-2 mt-8">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-square-instagram"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center pt-4 mt-4">
-                <p class="text-sm text-gray-600">© 2027 UIDesign.to - All rights reserved.</p>
-            </div>
+      <div class="w-9/12 mx-auto">
+        <div class="mb-8 flex justify-between">
+          <img class="mb-8" src="images/cup.png" alt="" />
+          <div class="flex items-center gap-2">
+            <h4>Ready to get started</h4>
+            <button
+              class="bg-gradient-to-r from-orange-500 to-red-600 px-3 py-2 rounded-lg text-white font-bold"
+            >
+              Get Started
+            </button>
+          </div>
         </div>
+        <!-- Links -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- first column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="hover:text-orange-600" href="#">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">About Us</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">Insurance</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Second column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">Our Services</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="hover:text-orange-600" href="#">Life Insurance</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">Car Insurance</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">Health Insurance</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">House Insurance</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Third column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">Help</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="hover:text-orange-600" href="#">FAQs</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Fourth column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">
+              Subscribe to our newsletter
+            </h3>
+            <div class="flex flex-col space-y-2">
+              <div>
+                <input
+                  placeholder="Email Address"
+                  type="text"
+                  class="bg-transparent border-b-2 border-black w-4/6"
+                />
+                <i
+                  class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"
+                ></i>
+                <div class="flex justify-between w-2/5 mb-2 mt-8">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center pt-4 mt-4">
+          <p class="text-sm text-gray-600">
+            © 2027 UIDesign.to - All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
